@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Se utilizzi PandaManager in pubblicazioni o progetti, cita questo software come segue."
+type: software
+title: "PandaManager"
+version: "1.0.0"
+date-released: "2026-10-24"
+license: Apache-2.0
+repository-code: "https://github.com/d4ruerk1/PandaManager"
+url: "https://github.com/d4ruerk1/PandaManager"
+abstract: >
+  PandaManager è un file manager next-gen dual-pane e ibrido per CachyOS / KDE Plasma 6,
+  progettato con sicurezza, privacy e conformità normativa (EU CRA, GDPR, NIS2) come
+  requisiti di prima classe. Supporta integrazione cloud via rclone, anteprima media avanzata,
+  gestione dispositivi tramite UDisks2/Solid e trasferimento file sicuro con verifica checksum.
+authors:
+  - name: "PandaManager Contributors"
+    website: "https://github.com/d4ruerk1/PandaManager"
+keywords:
+  - file-manager
+  - kde
+  - plasma6
+  - cachyos
+  - dual-pane
+  - rclone
+  - cloud
+  - cpp20
+  - qt6

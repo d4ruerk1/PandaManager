@@ -1,0 +1,42 @@
+# Ensure consistent line endings
+* text=auto eol=lf
+
+# Force LF for shell scripts
+*.sh text eol=lf
+
+# Force LF for source files
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.h text eol=lf
+*.c text eol=lf
+*.mm text eol=lf
+*.cmake text eol=lf
+CMakeLists.txt text eol=lf
+
+# Markdown
+*.md text eol=lf
+
+# YAML / JSON / TOML
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+
+# Desktop / AppStream
+*.desktop text eol=lf
+*.xml text eol=lf
+
+# Po/Pot translation files
+*.po text eol=lf
+*.pot text eol=lf
+
+# Binary assets — do not diff as text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.svg text eol=lf
+
+# Linguist attributes for GitHub language detection
+*.mm linguist-language=Objective-C++
+*.qrc linguist-language=XML

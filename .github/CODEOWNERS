@@ -1,0 +1,25 @@
+# CODEOWNERS — revisori automatici per area del repository
+# Sintassi: pattern  @utente-o-team
+
+# Maintainer globale
+*                           @d4ruerk1
+
+# Sicurezza
+SECURITY.md                 @d4ruerk1
+src/SeccompSandbox.*        @d4ruerk1
+src/SecureDelete.*          @d4ruerk1
+src/AuditLog.*              @d4ruerk1
+include/SeccompSandbox.hpp  @d4ruerk1
+include/SecureDelete.hpp    @d4ruerk1
+include/AuditLog.hpp        @d4ruerk1
+
+# Conformità legale / licenze
+LICENSE                     @d4ruerk1
+PRIVACY.md                  @d4ruerk1
+NOTICE                      @d4ruerk1
+pandamanager.spdx.json      @d4ruerk1
+publiccode.yml              @d4ruerk1
+
+# CI / infrastruttura
+.github/                    @d4ruerk1
+CMakeLists.txt              @d4ruerk1

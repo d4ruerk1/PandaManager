@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Name=PandaManager
+Name[it]=PandaManager
+GenericName=File Manager
+GenericName[it]=Gestore file
+Comment=Next-Gen Dual-Pane File Manager for KDE Plasma 6
+Comment[it]=Gestore file Next-Gen a doppio pannello per KDE Plasma 6
+Icon=org.cachyos.PandaManager
+Exec=pandamanager %U
+Terminal=false
+Categories=Qt;KDE;System;FileManager;
+MimeType=inode/directory;
+Keywords=file;manager;dual;pane;cloud;
+StartupNotify=true

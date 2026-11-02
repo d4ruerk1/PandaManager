@@ -1,0 +1,97 @@
+.\" SPDX-License-Identifier: Apache-2.0
+.\" SPDX-FileCopyrightText: 2024 PandaManager Contributors
+.TH PANDAMANAGER 1 "2024-10-24" "1.0.0" "PandaManager Manual"
+.
+.SH NOME
+pandamanager \- File manager Next-Gen Dual-Pane & Hybrid per CachyOS / KDE Plasma 6
+.
+.SH SINOSSI
+.B pandamanager
+[\fIOPZIONI\fR]
+.
+.SH DESCRIZIONE
+.B PandaManager
+è un file manager moderno per KDE Plasma 6 con pannello doppio (dual-pane),
+integrazione cloud ibrida, anteprima multimediale avanzata e sicurezza rafforzata
+(seccomp-bpf, privilege separation, audit log cifrato, cancellazione sicura GDPR Art.\~17).
+.PP
+Supporta Wayland e X11 con glass morphism, temi dark/light automatici e piena
+accessibilità AT-SPI2 (WCAG 2.1 AA, EN 301 549, Legge Stanca n.\~4/2004).
+.
+.SH OPZIONI
+.TP
+.B \-\-help
+Mostra questo messaggio di aiuto ed esce.
+.TP
+.B \-\-version
+Mostra la versione del programma ed esce.
+.TP
+.BI "\-\-path " PERCORSO
+Apre la directory specificata al primo avvio.
+.TP
+.B \-\-no\-sandbox
+Disabilita il filtro seccomp-bpf (sconsigliato; solo per debug).
+.
+.SH SCORCIATOIE DA TASTIERA
+.TP
+.B F3
+Attiva/disattiva il pannello doppio (split-pane).
+.TP
+.B Ctrl+H
+Mostra/nasconde i file nascosti.
+.TP
+.B Spazio
+Apre QuickLook (anteprima file in overlay).
+.TP
+.B Ctrl+L
+Focalizza la barra degli indirizzi (breadcrumb).
+.TP
+.B Alt+Sinistra / Alt+Destra
+Naviga avanti/indietro nella cronologia.
+.TP
+.B F5
+Aggiorna la vista corrente.
+.TP
+.B Delete
+Sposta i file selezionati nel cestino.
+.TP
+.B Shift+Delete
+Avvia la cancellazione sicura (DoD 5220.22-M).
+.
+.SH FILE
+.TP
+.I ~/.config/pandamanager/
+Configurazione utente (KConfig).
+.TP
+.I ~/.local/share/pandamanager/audit.log.enc
+Audit log cifrato delle operazioni distruttive.
+.TP
+.I /usr/share/applications/pandamanager.desktop
+Voce del menu applicazioni.
+.
+.SH VARIABILI D'AMBIENTE
+.TP
+.B PANDA_NO_SECCOMP
+Se impostata a \fI1\fR, disabilita il sandbox seccomp-bpf.
+.TP
+.B PANDA_AUDIT_PATH
+Override del percorso dell'audit log.
+.
+.SH SEGNALAZIONE BUG
+https://github.com/cachyos/pandamanager/issues
+.PP
+Per vulnerabilità di sicurezza, seguire la policy in \fBSECURITY.md\fR
+(responsible disclosure / CVD conforme CRA 2024/2847).
+.
+.SH AUTORI
+PandaManager Contributors.
+.
+.SH LICENZA
+Apache-2.0. Vedi \fI/usr/share/licenses/pandamanager/LICENSE\fR.
+.
+.SH VEDERE ANCHE
+.BR dolphin (1),
+.BR kfind (1),
+.BR rclone (1),
+.BR gpg2 (1),
+.BR clamscan (1)

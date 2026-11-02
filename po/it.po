@@ -1,0 +1,106 @@
+# Italiano — PandaManager
+# SPDX-License-Identifier: Apache-2.0
+msgid ""
+msgstr ""
+"Project-Id-Version: PandaManager 1.0.0\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "PandaManager"
+msgstr "PandaManager"
+
+msgid "Split View"
+msgstr "Vista divisa"
+
+msgid "Show Hidden Files"
+msgstr "Mostra file nascosti"
+
+msgid "Quick Look"
+msgstr "Anteprima rapida"
+
+msgid "Address Bar"
+msgstr "Barra degli indirizzi"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Documents"
+msgstr "Documenti"
+
+msgid "Downloads"
+msgstr "Download"
+
+msgid "Devices"
+msgstr "Dispositivi"
+
+msgid "Cloud"
+msgstr "Cloud"
+
+msgid "Transfer Queue"
+msgstr "Coda trasferimenti"
+
+msgid "Speed: %1 MB/s"
+msgstr "Velocità: %1 MB/s"
+
+msgid "ETA: %1"
+msgstr "Tempo rimanente: %1"
+
+msgid "Secure Delete"
+msgstr "Cancellazione sicura"
+
+msgid "Are you sure you want to permanently delete %1 file(s) using DoD 5220.22-M wiping?"
+msgstr "Sei sicuro di voler cancellare definitivamente %1 file con il metodo DoD 5220.22-M?"
+
+msgid "This action cannot be undone."
+msgstr "Questa operazione non può essere annullata."
+
+msgid "Connect to Cloud"
+msgstr "Connetti al cloud"
+
+msgid "Provider"
+msgstr "Provider"
+
+msgid "Disconnect"
+msgstr "Disconnetti"
+
+msgid "Mount"
+msgstr "Monta"
+
+msgid "Unmount"
+msgstr "Smonta"
+
+msgid "Format"
+msgstr "Formatta"
+
+msgid "Device protection: cannot operate on root disk"
+msgstr "Protezione dispositivo: impossibile operare sul disco di sistema"
+
+msgid "Verify Checksum"
+msgstr "Verifica checksum"
+
+msgid "Checksum verified successfully"
+msgstr "Checksum verificato con successo"
+
+msgid "Checksum mismatch! File may be corrupted."
+msgstr "Checksum non corrispondente! Il file potrebbe essere corrotto."
+
+msgid "Scanning for malware…"
+msgstr "Scansione malware in corso…"
+
+msgid "Scan complete: no threats found"
+msgstr "Scansione completata: nessuna minaccia rilevata"
+
+msgid "Threat detected: %1"
+msgstr "Minaccia rilevata: %1"
+
+msgid "Error"
+msgstr "Errore"
+
+msgid "Permission denied"
+msgstr "Permesso negato"
+
+msgid "File not found"
+msgstr "File non trovato"

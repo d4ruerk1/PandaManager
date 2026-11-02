@@ -1,0 +1,39 @@
+name: "✨ Feature Request"
+description: "Proponi una nuova funzionalità o un miglioramento."
+labels: ["enhancement"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hai un'idea per migliorare PandaManager? Descrivila qui.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problema o esigenza"
+      description: "Qual è il problema che vorresti risolvere?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Soluzione proposta"
+      description: "Come immagini la funzionalità?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternative considerate"
+      description: "Hai pensato ad altre soluzioni?"
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Checklist"
+      options:
+        - label: "Ho verificato che questa funzionalità non sia già richiesta o in sviluppo."
+          required: true

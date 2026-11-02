@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "🔒 Segnalazione vulnerabilità di sicurezza"
+    url: https://github.com/d4ruerk1/PandaManager/security/advisories/new
+    about: "Non aprire una issue pubblica per vulnerabilità. Usa GitHub Security Advisories."
+  - name: "💬 Discussioni generali"
+    url: https://github.com/d4ruerk1/PandaManager/discussions
+    about: "Per domande, idee e confronti usa le Discussions."

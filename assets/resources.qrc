@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource prefix="/icons">
+    <file alias="panda_icon.svg">panda_icon.svg</file>
+    <file alias="panda_icon.png">panda_icon.png</file>
+  </qresource>
+</RCC>

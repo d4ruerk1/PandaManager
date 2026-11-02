@@ -1,0 +1,17 @@
+name: "❓ Domanda / Support"
+description: "Hai una domanda sull'uso o la compilazione di PandaManager?"
+labels: ["question"]
+assignees: []
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: "La tua domanda"
+    validations:
+      required: true
+
+  - type: input
+    id: docs
+    attributes:
+      label: "Hai consultato la documentazione?"
+      placeholder: "es. BUILDING.md, README.md, wiki..."

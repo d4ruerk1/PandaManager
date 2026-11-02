@@ -1,0 +1,216 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-10-24T00:00:00Z",
+    "creators": [
+      "Tool: pandamanager-sbom-generator-1.0.0",
+      "Organization: d4ruerk1"
+    ],
+    "licenseListVersion": "3.22"
+  },
+  "name": "PandaManager-1.0.0-SBOM",
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://github.com/d4ruerk1/PandaManager/sbom/pandamanager-1.0.0.spdx.json",
+  "documentDescribes": ["SPDXRef-pandamanager"],
+
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-pandamanager",
+      "name": "PandaManager",
+      "version": "1.0.0",
+      "downloadLocation": "https://github.com/d4ruerk1/PandaManager/archive/refs/tags/v1.0.0.tar.gz",
+      "filesAnalyzed": true,
+      "homepage": "https://github.com/d4ruerk1/PandaManager",
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "Copyright 2026 d4ruerk1",
+      "supplier": "Organization: d4ruerk1",
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "NOASSERTION"
+      },
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:github/d4ruerk1/PandaManager@1.0.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-qt6-base",
+      "name": "qt6-base",
+      "version": "6.7.0",
+      "downloadLocation": "https://download.qt.io/official_releases/qt/6.7/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only OR LicenseRef-Qt-Commercial",
+      "licenseDeclared": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only OR LicenseRef-Qt-Commercial",
+      "copyrightText": "Copyright The Qt Company Ltd.",
+      "supplier": "Organization: The Qt Company",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:generic/qt6-base@6.7.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-kf6-kio",
+      "name": "kf6-kio",
+      "version": "6.3.0",
+      "downloadLocation": "https://invent.kde.org/frameworks/kio",
+      "filesAnalyzed": false,
+      "licenseConcluded": "LGPL-2.0-or-later",
+      "licenseDeclared": "LGPL-2.0-or-later",
+      "copyrightText": "Copyright KDE Contributors",
+      "supplier": "Organization: KDE Community",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:generic/kf6-kio@6.3.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-kf6-solid",
+      "name": "kf6-solid",
+      "version": "6.3.0",
+      "downloadLocation": "https://invent.kde.org/frameworks/solid",
+      "filesAnalyzed": false,
+      "licenseConcluded": "LGPL-2.1-or-later",
+      "licenseDeclared": "LGPL-2.1-or-later",
+      "copyrightText": "Copyright KDE Contributors",
+      "supplier": "Organization: KDE Community",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:generic/kf6-solid@6.3.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-kf6-wallet",
+      "name": "kf6-wallet",
+      "version": "6.3.0",
+      "downloadLocation": "https://invent.kde.org/frameworks/kwallet",
+      "filesAnalyzed": false,
+      "licenseConcluded": "LGPL-2.1-or-later",
+      "licenseDeclared": "LGPL-2.1-or-later",
+      "copyrightText": "Copyright KDE Contributors",
+      "supplier": "Organization: KDE Community",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:generic/kf6-wallet@6.3.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-ffmpeg",
+      "name": "FFmpeg",
+      "version": "6.1.0",
+      "downloadLocation": "https://ffmpeg.org/download.html",
+      "filesAnalyzed": false,
+      "licenseConcluded": "LGPL-2.1-or-later",
+      "licenseDeclared": "LGPL-2.1-or-later",
+      "copyrightText": "Copyright the FFmpeg developers",
+      "supplier": "Organization: FFmpeg Project",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:generic/ffmpeg@6.1.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-libraw",
+      "name": "LibRaw",
+      "version": "0.21.2",
+      "downloadLocation": "https://www.libraw.org/download",
+      "filesAnalyzed": false,
+      "licenseConcluded": "LGPL-2.1-only OR CDDL-1.0",
+      "licenseDeclared": "LGPL-2.1-only OR CDDL-1.0",
+      "copyrightText": "Copyright LibRaw LLC",
+      "supplier": "Organization: LibRaw LLC",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:generic/libraw@0.21.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-taglib",
+      "name": "TagLib",
+      "version": "2.0.1",
+      "downloadLocation": "https://taglib.org/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "LGPL-2.1-or-later OR MPL-1.1",
+      "licenseDeclared": "LGPL-2.1-or-later OR MPL-1.1",
+      "copyrightText": "Copyright Scott Wheeler and TagLib contributors",
+      "supplier": "Organization: TagLib Project",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:generic/taglib@2.0.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-libopenmpt",
+      "name": "libopenmpt",
+      "version": "0.7.6",
+      "downloadLocation": "https://lib.openmpt.org/libopenmpt/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "Copyright OpenMPT Project and libopenmpt contributors",
+      "supplier": "Organization: OpenMPT Project",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:generic/libopenmpt@0.7.6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-rclone",
+      "name": "rclone",
+      "version": "1.65.0",
+      "downloadLocation": "https://rclone.org/downloads/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright Nick Craig-Wood and rclone contributors",
+      "supplier": "Organization: rclone Project",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:generic/rclone@1.65.0"
+        }
+      ]
+    }
+  ],
+
+  "relationships": [
+    { "spdxElementId": "SPDXRef-DOCUMENT",       "relationshipType": "DESCRIBES",  "relatedSpdxElement": "SPDXRef-pandamanager" },
+    { "spdxElementId": "SPDXRef-pandamanager",   "relationshipType": "DYNAMIC_LINK","relatedSpdxElement": "SPDXRef-qt6-base"     },
+    { "spdxElementId": "SPDXRef-pandamanager",   "relationshipType": "DYNAMIC_LINK","relatedSpdxElement": "SPDXRef-kf6-kio"      },
+    { "spdxElementId": "SPDXRef-pandamanager",   "relationshipType": "DYNAMIC_LINK","relatedSpdxElement": "SPDXRef-kf6-solid"    },
+    { "spdxElementId": "SPDXRef-pandamanager",   "relationshipType": "DYNAMIC_LINK","relatedSpdxElement": "SPDXRef-kf6-wallet"   },
+    { "spdxElementId": "SPDXRef-pandamanager",   "relationshipType": "DYNAMIC_LINK","relatedSpdxElement": "SPDXRef-ffmpeg"       },
+    { "spdxElementId": "SPDXRef-pandamanager",   "relationshipType": "DYNAMIC_LINK","relatedSpdxElement": "SPDXRef-libraw"       },
+    { "spdxElementId": "SPDXRef-pandamanager",   "relationshipType": "DYNAMIC_LINK","relatedSpdxElement": "SPDXRef-taglib"       },
+    { "spdxElementId": "SPDXRef-pandamanager",   "relationshipType": "DYNAMIC_LINK","relatedSpdxElement": "SPDXRef-libopenmpt"   },
+    { "spdxElementId": "SPDXRef-pandamanager",   "relationshipType": "RUNTIME_DEPENDENCY_OF","relatedSpdxElement": "SPDXRef-rclone" }
+  ]
+}

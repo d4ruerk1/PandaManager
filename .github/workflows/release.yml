@@ -1,0 +1,58 @@
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2026 PandaManager Contributors
+
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Create GitHub Release
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            cmake ninja-build \
+            qt6-base-dev libkf6coreaddons-dev libkf6i18n-dev \
+            libffmpegthumbnailer-dev libraw-dev libtag1-dev \
+            libclamav-dev libgpgme-dev
+
+      - name: Build Release
+        run: |
+          cmake -B build -DCMAKE_BUILD_TYPE=Release -G Ninja
+          cmake --build build --parallel
+
+      - name: Package sources
+        run: |
+          TAG=${GITHUB_REF_NAME}
+          git archive --format=tar.gz --prefix=pandamanager-${TAG}/ \
+            -o pandamanager-${TAG}.tar.gz HEAD
+
+      - name: Sign release (if key available)
+        if: env.SIGNING_KEY != ''
+        env:
+          SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
+        run: bash scripts/sign-release.sh pandamanager-${GITHUB_REF_NAME}.tar.gz
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          body_path: CHANGELOG.md
+          files: |
+            pandamanager-*.tar.gz
+            pandamanager-*.tar.gz.sig
+          draft: false
+          prerelease: ${{ contains(github.ref_name, '-') }}

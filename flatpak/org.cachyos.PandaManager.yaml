@@ -1,0 +1,27 @@
+id: org.cachyos.PandaManager
+runtime: org.kde.Platform
+runtime-version: '6.8'
+sdk: org.kde.Sdk
+command: pandamanager
+finish-args:
+  - --allow=devel
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+  - --filesystem=home
+  - --talk-name=org.kde.kwalletd5
+  - --talk-name=org.kde.kwalletd6
+  - --talk-name=org.freedesktop.secrets
+  - --system-talk-name=org.freedesktop.UDisks2
+  - --system-talk-name=org.cachyos.PandaManager.Helper
+modules:
+  - name: pandamanager
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DCMAKE_EXE_LINKER_FLAGS=-Wl,-z,relro,-z,now
+      - -DBUILD_TESTING=OFF
+    sources:
+      - type: dir
+        path: ..

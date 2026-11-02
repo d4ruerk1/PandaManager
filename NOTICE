@@ -1,0 +1,62 @@
+NOTICE — PandaManager v1.0.0
+==============================
+SPDX-License-Identifier: Apache-2.0
+SPDX-FileCopyrightText: 2026 PandaManager Contributors
+
+This product includes software developed by third parties.
+Full dependency licenses are documented in pandamanager.spdx.json (SPDX 2.3 SBOM).
+
+Below is a summary of key third-party components and their licenses,
+as required by the EU Cyber Resilience Act (EU 2024/2847, Art. 13).
+
+------------------------------------------------------------------------
+Component          Version   License
+------------------------------------------------------------------------
+Qt6 (Qt6::Core, Qt6::Gui, Qt6::Widgets, Qt6::DBus,
+     Qt6::Multimedia)        6.7.x    LGPL-3.0-only / GPL-2.0-only /
+                                      GPL-3.0-only / LicenseRef-Qt-Commercial
+                                      Copyright (C) The Qt Company Ltd.
+                                      https://www.qt.io/
+
+KDE Frameworks 6   6.x      LGPL-2.1-or-later
+(KF6::CoreAddons, KF6::I18n, KF6::KIO, KF6::Solid, KF6::Wallet)
+                             Copyright (C) KDE Community
+                             https://develop.kde.org/
+
+FFmpeg             6.x      LGPL-2.1-or-later (libavcodec, libavformat,
+                             libavutil, libswscale)
+                             Copyright (C) FFmpeg contributors
+                             https://ffmpeg.org/
+
+LibRaw             0.21.x   LGPL-2.1-or-later / CDDL-1.0
+                             Copyright (C) LibRaw LLC
+                             https://www.libraw.org/
+
+TagLib             2.x      LGPL-2.1-or-later / MPL-1.1
+                             Copyright (C) Scott Wheeler and TagLib contributors
+                             https://taglib.org/
+
+libopenmpt         0.7.x    BSD-3-Clause
+                             Copyright (C) OpenMPT Project / libopenmpt contributors
+                             https://lib.openmpt.org/
+
+rclone             1.67+    MIT
+                             Copyright (C) Nick Craig-Wood and contributors
+                             https://rclone.org/
+
+ClamAV (optional)  1.x      GPL-2.0-only
+                             Copyright (C) Cisco Systems, Inc.
+                             https://www.clamav.net/
+
+GnuPG / gpg2 (opt.)2.x     GPL-3.0-or-later
+                             Copyright (C) Free Software Foundation
+                             https://gnupg.org/
+
+libseccomp (opt.)  2.x      LGPL-2.1-only
+                             Copyright (C) libseccomp contributors
+                             https://github.com/seccomp/libseccomp
+
+------------------------------------------------------------------------
+Full SPDX SBOM: pandamanager.spdx.json
+CRA SBOM endpoint: https://github.com/d4ruerk1/PandaManager/releases/latest
+------------------------------------------------------------------------

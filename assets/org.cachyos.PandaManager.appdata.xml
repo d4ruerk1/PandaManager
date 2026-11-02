@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- SPDX-FileCopyrightText: 2026 d4ruerk1 <https://github.com/d4ruerk1/PandaManager> -->
+<component type="desktop-application">
+  <id>org.cachyos.PandaManager</id>
+
+  <name>PandaManager</name>
+  <name xml:lang="it">PandaManager</name>
+  <summary>File manager Next-Gen Dual-Pane &amp; Hybrid per KDE Plasma 6</summary>
+  <summary xml:lang="it">File manager dual-pane ibrido di nuova generazione per KDE Plasma 6</summary>
+
+  <metadata_license>FSFAP</metadata_license>
+  <project_license>Apache-2.0</project_license>
+
+  <description>
+    <p>
+      PandaManager is a next-generation, dual-pane hybrid file manager designed for
+      KDE Plasma 6 and CachyOS. It combines a modern glass-morphism UI with powerful
+      features including cloud storage integration (Google Drive, OneDrive, Dropbox,
+      MEGA, pCloud, Proton Drive, WebDAV, SFTP, SMB, S3/MinIO), rich media preview
+      (images, video, audio, RAW photos, tracker modules), device management via
+      UDisks2/Solid, and a thread-safe transfer queue with KIO integration.
+    </p>
+    <p xml:lang="it">
+      PandaManager è un file manager dual-pane ibrido di nuova generazione progettato
+      per KDE Plasma 6 e CachyOS. Combina un'interfaccia glass-morphism moderna con
+      funzionalità avanzate: integrazione cloud (Google Drive, OneDrive, Dropbox, MEGA,
+      pCloud, Proton Drive, WebDAV, SFTP, SMB, S3/MinIO), anteprima multimediale ricca
+      (immagini, video, audio, RAW, tracker module), gestione dispositivi via
+      UDisks2/Solid e coda trasferimenti thread-safe con integrazione KIO.
+    </p>
+    <ul>
+      <li>Dual-pane split view (F3 toggle)</li>
+      <li>Glass morphism UI with KDE dark/light theme detection</li>
+      <li>Cloud storage via rclone (12+ providers, KWallet credential storage)</li>
+      <li>Media preview: 50+ formats including RAW, DSD, JXL, AVIF, BIK, MXF</li>
+      <li>QuickLook overlay for images, video, audio, and PDF</li>
+      <li>Column view (macOS Finder style) and breadcrumb navigation</li>
+      <li>GDPR-compliant: zero telemetry, Privacy by Design (Art. 25)</li>
+      <li>Accessibility: EN 301 549, AT-SPI2, WCAG 2.1 AA keyboard focus</li>
+      <li>CRA 2024/2847 compliant: SBOM, CVD policy, binary hardening</li>
+    </ul>
+  </description>
+
+  <launchable type="desktop-id">org.cachyos.PandaManager.desktop</launchable>
+
+  <url type="homepage">https://github.com/d4ruerk1/PandaManager</url>
+  <url type="bugtracker">https://github.com/d4ruerk1/PandaManager/issues</url>
+  <url type="vcs-browser">https://github.com/d4ruerk1/PandaManager</url>
+  <url type="contribute">https://github.com/d4ruerk1/PandaManager/blob/main/CONTRIBUTING.md</url>
+
+  <developer id="io.github.d4ruerk1">
+    <name>d4ruerk1</name>
+    <url>https://github.com/d4ruerk1</url>
+  </developer>
+
+  <content_rating type="oars-1.1" />
+
+  <releases>
+    <release version="1.0.0" date="2026-10-24">
+      <description>
+        <p>Prima versione stabile di PandaManager.</p>
+        <ul>
+          <li>Scaffolding completo e conformità legale (Apache-2.0, CRA, GDPR, EN 301 549)</li>
+          <li>Motore multimediale con 50+ formati (FFmpeg, LibRaw, TagLib, libopenmpt)</li>
+          <li>Cloud engine sicuro via rclone JSON-RPC / D-Bus con KWallet</li>
+          <li>Device manager UDisks2/Solid con Polkit e protezione root</li>
+          <li>Transfer queue thread-safe con KIO e barra progresso live</li>
+          <li>UI glass-morphism: split-pane, breadcrumb, QuickLook, vista colonne</li>
+          <li>Suite di test CTest completa: unit, UI, mock D-Bus, coverage CI</li>
+          <li>Flatpak sandbox, PKGBUILD Arch/CachyOS, AppStream, SBOM SPDX</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+
+  <provides>
+    <binary>pandamanager</binary>
+  </provides>
+
+  <categories>
+    <category>System</category>
+    <category>FileManager</category>
+    <category>KDE</category>
+    <category>Qt</category>
+  </categories>
+
+  <keywords>
+    <keyword>file manager</keyword>
+    <keyword>dual pane</keyword>
+    <keyword>cloud</keyword>
+    <keyword>KDE</keyword>
+    <keyword>CachyOS</keyword>
+    <keyword>media preview</keyword>
+    <keyword>rclone</keyword>
+  </keywords>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>Vista split-pane principale con glass morphism</caption>
+      <image type="source">https://github.com/d4ruerk1/PandaManager/raw/main/assets/screenshot_main.png</image>
+    </screenshot>
+  </screenshots>
+
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+  </supports>
+
+  <requires>
+    <display_length compare="ge">900</display_length>
+  </requires>
+</component>

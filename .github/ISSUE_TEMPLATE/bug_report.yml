@@ -1,0 +1,84 @@
+name: "🐛 Bug Report"
+description: "Segnala un comportamento anomalo o un crash di PandaManager."
+labels: ["bug", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per aver aperto una segnalazione. Compila tutti i campi per aiutarci a riprodurre il problema.
+        **Non usare questa form per vulnerabilità di sicurezza** — consulta [SECURITY.md](../SECURITY.md).
+
+  - type: input
+    id: version
+    attributes:
+      label: "Versione di PandaManager"
+      placeholder: "es. 1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: "Sistema operativo"
+      options:
+        - "CachyOS (Arch-based)"
+        - "Arch Linux"
+        - "KDE Neon"
+        - "Fedora KDE"
+        - "openSUSE Tumbleweed"
+        - "Debian/Ubuntu KDE"
+        - "macOS"
+        - "Windows"
+        - "Altro"
+    validations:
+      required: true
+
+  - type: input
+    id: plasma
+    attributes:
+      label: "Versione KDE Plasma"
+      placeholder: "es. 6.2.1"
+
+  - type: input
+    id: qt
+    attributes:
+      label: "Versione Qt"
+      placeholder: "es. 6.7.2"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Descrizione del bug"
+      description: "Cosa succede? Cosa ti aspettavi che succedesse?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Passi per riprodurre"
+      placeholder: |
+        1. Apri PandaManager
+        2. Vai a '...'
+        3. Clicca '...'
+        4. Osserva l'errore
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Log / output terminale"
+      description: "Incolla qui eventuali log, messaggi di errore o backtrace."
+      render: shell
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Checklist"
+      options:
+        - label: "Ho verificato che non esiste già una segnalazione simile."
+          required: true
+        - label: "Ho letto il [CONTRIBUTING.md](../CONTRIBUTING.md)."
+          required: false

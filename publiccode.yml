@@ -1,0 +1,61 @@
+publiccodeYmlVersion: "0.3"
+name: PandaManager
+applicationSuite: PandaManager
+url: "https://github.com/d4ruerk1/PandaManager"
+releaseDate: "2026-10-24"
+softwareVersion: "1.0.0"
+developmentStatus: development
+softwareType: standalone/desktop
+categories:
+  - file-management
+platforms:
+  - linux
+logo: assets/panda_icon.svg
+
+description:
+  it:
+    shortDescription: "File manager Next-Gen Dual-Pane & Hybrid per KDE Plasma 6"
+    longDescription: >
+      PandaManager è un file manager moderno a doppio pannello per CachyOS e KDE Plasma 6.
+      Supporta anteprima multimediale avanzata, cloud integrato (rclone), gestione dispositivi
+      via UDisks2, trasferimenti thread-safe e glass morphism UI. Conforme a GDPR,
+      D.Lgs. 196/2003, CRA EU 2024/2847, Legge Stanca n. 4/2004, CAD D.Lgs. 82/2005,
+      EN 301 549 e D.Lgs. 138/2024 (NIS2).
+    documentation: "https://github.com/d4ruerk1/PandaManager/blob/main/README.md"
+    apiDocumentation: "https://github.com/d4ruerk1/PandaManager/blob/main/Doxyfile"
+  en:
+    shortDescription: "Next-Gen Dual-Pane file manager for KDE Plasma 6"
+    longDescription: >
+      PandaManager is a modern dual-pane file manager for CachyOS and KDE Plasma 6.
+      Features advanced media preview, integrated cloud (rclone), device management
+      via UDisks2, thread-safe transfers, and glass morphism UI. Compliant with GDPR,
+      Italian Privacy Code (D.Lgs. 196/2003), EU CRA 2024/2847, Italian Accessibility
+      Law 4/2004 (Legge Stanca), CAD D.Lgs. 82/2005, EN 301 549, and D.Lgs. 138/2024 (NIS2).
+    documentation: "https://github.com/d4ruerk1/PandaManager/blob/main/README.md"
+    apiDocumentation: "https://github.com/d4ruerk1/PandaManager/blob/main/Doxyfile"
+
+legal:
+  license: Apache-2.0
+  authorsFile: "NOTICE"
+
+maintenance:
+  contacts:
+    - name: d4ruerk1
+      github: "https://github.com/d4ruerk1"
+  type: community
+
+localisation:
+  localisationReady: true
+  availableLanguages:
+    - it
+    - en
+
+# Estensione italiana (publiccode.yml spec AgID / Developers Italia)
+it:
+  countryExtensionVersion: "0.2"
+  conforme:
+    gdpr: true                          # GDPR (UE 2016/679) + D.Lgs. 196/2003 (Codice Privacy)
+    misureMinimeSicurezza: true         # Misure minime sicurezza AgID (Circolare AgID 2/2017)
+    lineeGuidaDesign: false             # Linee Guida Design PA (non applicabile: sw desktop non PA)
+  riuso:
+    codiceIPA: ""                       # Da compilare se adottato da una PA italiana
